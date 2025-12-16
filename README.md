@@ -16,7 +16,7 @@ top-performing regions, and profitable product categories using Python.
 - Seaborn
 - Google Colab
 
-##Repository Structure
+##  Repository Structure
 - Dataset - raw dataset
 - Notebook - analysis notebook
 - Visuals - charts and graphs
