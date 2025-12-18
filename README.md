@@ -13,10 +13,9 @@ top-performing regions, and profitable product categories using Python.
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborn
 - Google Colab
 
 ##  Repository Structure
-- Dataset - raw dataset
-- Notebook - analysis notebook
+- Dataset - raw dataset and cleaned
+- Notebook - google colab 
 - Visuals - charts and graphs
