@@ -5,7 +5,7 @@
 
 ## About the Project
 
-This project focuses on analyzing retail sales data from a Superstore to understand business performance beyond surface-level revenue numbers. The goal is to identify profit drivers, loss-making areas, and operational inefficiencies using structured data analysis.
+This project focuses on analyzing retail sales data from a Superstore to understand business performance . The goal is to identify profit drivers, loss-making areas, and operational inefficiencies using data analysis.
 
 The analysis follows an end-to-end data analytics workflow — starting from raw, unclean data and progressing through cleaning, exploration, insight generation, and business recommendations. 
 
@@ -19,6 +19,7 @@ The objective of this analysis is to:
 
 * Identify areas where high sales do not translate into profit
 * Understand the impact of discounts, shipping modes, and customer segments on profitability
+* Time-series trend analysis and simple forecasting
 * Provide data-driven recommendations to improve overall business performance
 
 ---
@@ -33,7 +34,7 @@ The dataset contains order-level sales data with information on:
 * Sales, discounts, and profit
 * Regional performance
 
-Two versions of the dataset are used:
+Two datasets are used:
 
 * **Raw Dataset**: Contains inconsistent formats, and unprocessed columns
 * **Cleaned Dataset**: Processed for analysis by handling correcting data types, and standardizing fields
@@ -51,8 +52,6 @@ Two versions of the dataset are used:
 
 ## Analysis Overview
 
-The analysis is structured into the following key areas:
-
 1. Data Cleaning & Preparation
 2. Exploratory Data Analysis (EDA)
 3. Sales vs Profit Analysis
@@ -61,29 +60,28 @@ The analysis is structured into the following key areas:
 6. Customer Segment Analysis
 7. Regional Performance Analysis
 8. Shipping Mode Profitability
-
-Each section focuses on answering specific business questions using data-backed evidence.
+9. Time-series trend analysis and simple forecasting
 
 ---
 
 ## Key Insights
 
-* High sales volume does not always result in high profitability, particularly in the Furniture category
-* Certain sub-categories consistently generate losses despite frequent sales
-* Discounts above a certain threshold significantly reduce profit margins
-* Corporate customers contribute higher average profit compared to other segments
-* Some regions and shipping modes incur higher operational costs, affecting profitability
+- Orders with discounts greater than 20% resulted in a total loss of ~$135,000, indicating excessive discounting significantly impacts profitability.
+- The top 5 loss-making products account for ~29% of total profit loss, showing that a small number of products disproportionately affect margins.
+- The overall profit margin across all orders is ~12.5%, which is relatively low compared to total sales volume.
+- When discounts are limited to below 15%, profit margin increases to ~28.9%, representing an improvement of ~16.4 percentage points.
+- The Furniture category generates high sales but contributes heavily to overall losses, especially from specific sub-categories.
+- A small group of high-value customers contributes the majority of total profit, while low-value customers often receive higher discounts.
 
 ---
 
 ## Business Recommendations
 
-* Re-evaluate pricing and discount strategies, especially for loss-making categories
-* Limit excessive discounting that leads to negative profit margins
-* Focus retention and marketing efforts on high-value customer segments
-* Optimize shipping modes to balance customer satisfaction and cost efficiency
-* Regularly track profit alongside revenue for better decision-making
-
+- Cap discounts at 15–20%, as higher discounts consistently lead to losses.
+- Review or discontinue the top loss-making products, which drive nearly one-third of total losses.
+- Focus retention and upselling efforts on high-profit customers instead of volume-based discounting.
+- Track profit margin alongside sales as a core performance metric.
+- Use monthly sales trends and moving averages for short-term demand planning.
 ---
 
 
